@@ -1,0 +1,334 @@
+:root {
+  --main-color: #2e2f42;
+  --logo-button-color: #4d5ae5;
+  --text-color: #434455;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  background-color: #ffffff;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*Хедер*/
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.page-navigation {
+  display: flex;
+  align-items: center;
+}
+.contacts-list {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
+}
+.logo-second-word {
+  color: var(--main-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.logotype {
+  color: var(--logo-button-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+.page-header {
+  background: #fff;
+  border-bottom: 1px solid #e7e9fc;
+}
+.menu-list {
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  display: flex;
+  gap: 40px;
+}
+.menu-item {
+  padding: 24px 0;
+}
+.menu-link {
+  color: var(--main-color);
+  padding: 24px 0;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: #404bbf;
+}
+.contacts {
+  font-style: normal;
+}
+.contacts-link {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf;
+}
+/* Секція 1 */
+.big-board {
+  background: var(--main-color);
+  line-height: 1.07;
+  padding: 188px 0;
+}
+.main-title {
+  color: #fff;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  padding-bottom: 48px;
+  margin-left: auto;
+  max-width: 496px;
+  margin-right: auto;
+}
+.order-service {
+  background: var(--logo-button-color);
+  color: var(--white, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+}
+.order-service:hover,
+.order-service:focus {
+  background-color: #404bbf;
+}
+/* Секція 2 */
+.about-us-list {
+  display: flex;
+  gap: 24px;
+}
+.about-us {
+  padding: 120px 0;
+}
+.about-us-item {
+  width: calc((100% - 72px) / 4);
+}
+.about-us-title {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.about-us-text {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* Секція 3 */
+.team {
+  background: #f4f4fd;
+  padding: 120px 0;
+}
+.team-title {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+.team-list-item {
+  background: #fff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list-fullname-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+}
+.team-list-img {
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list-fullname {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.team-list-text {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* Секція 4 */
+.portfolio {
+  background: #fff;
+  padding: 120px 0;
+}
+.portfolio-main-title {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.portfolio-list {
+  list-style-type: none;
+  display: flex;
+  column-gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
+}
+
+.portfolio-item {
+  margin: 0;
+  width: 360px;
+}
+.portfolio-item-container {
+  display: flex;
+  padding: 32px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-product {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.portfolio-text {
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+/* Футтер */
+.footer {
+  background: #2e2f42;
+
+  padding: 100px 0;
+}
+.logotype-footer {
+  color: var(--logo-button-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.logo-second-word-footer {
+  color: #f4f4fd;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-text {
+  color: #f4f4fd;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+  max-width: 265px;
+}
