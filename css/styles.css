@@ -126,7 +126,6 @@ body {
   padding: 24px 0;
 }
 .menu-link {
-  color: var(--main-color);
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -298,33 +297,26 @@ body {
   align-items: center;
 }
 .social-personal-items {
-  display: block;
   width: 40px;
   height: 40px;
-}
-.social-icons {
-  fill: #f4f4fd;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .personal-social-link {
-  display: flex;
   width: 100%;
   height: 100%;
-  background-color: var(--logo-button-color);
-  border-radius: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+  background-color: #4d5ae5;
   fill: #f4f4fd;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.personal-social-link:hover .social-icons,
-.personal-social-link:focus .social-icons {
-  fill: #31d0aa;
-}
 .personal-social-link:hover,
-.personal-social-link::focus {
+.personal-social-link:focus {
   background-color: #404bbf;
 }
+
 /* Секція 4 */
 .portfolio {
   background: #fff;
