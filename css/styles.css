@@ -303,7 +303,7 @@ body {
   height: 40px;
 }
 .social-icons {
-  fill: var(--logo-button-color);
+  fill: #f4f4fd;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .personal-social-link {
@@ -314,10 +314,14 @@ body {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .personal-social-link:hover .social-icons,
 .personal-social-link:focus .social-icons {
   fill: #31d0aa;
+}
+.personal-social-link:hover,
+.personal-social-link::focus {
   background-color: #404bbf;
 }
 /* Секція 4 */
